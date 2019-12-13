@@ -19,7 +19,7 @@ function App() {
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/shop" exact component={Shop} />
-            <Route path="/shop/:slug-:id" component={FullGame} />
+            <Route path="/shop/:slug/:id" component={FullGame} />
             <Route path="/about" exact component={About} />
             <Route path="/versus" exact component={Versus} />
           </Switch>

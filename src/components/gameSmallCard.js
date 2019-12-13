@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 const GameSmallCard = ({ img, name, id, rating, slug }) => {
 
-  const toRoute = `/shop/${slug}-${id}`;
+  const toRoute = `/shop/${slug}/${id}`;
 
   useEffect( () => {
     console.log("SE"); 

@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 .App-logo {
@@ -35,4 +36,51 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.grid-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-menu div {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+}
+.grid-menu a{
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+.grid-menu a:hover div:hover {
+  background-color:  hsl(348, 0%, 47%);
+}
+
+.grid-menu a:nth-child(1) div{
+  background-color: hsl(348, 83%, 47%);
+}
+.grid-menu a:nth-child(2) div{
+  background-color: hsl(328, 73%, 37%);
+}
+.grid-menu a:nth-child(3) div{
+  background-color: hsl(338, 63%, 47%);
+}
+.content {
+  padding: 6px 48px;
+}
+
+.content header {
+  width: 100%;
+  background: #a84949;
+  padding: 12px;
+  color: #fff;
+  margin-bottom: 36px;
+  margin-top: 24px;
 }

@@ -25,26 +25,28 @@ const Shop = () => {
     fetchItems();
   }, []);
 
-  const displayList = () => (
-    items.map(item => (
-      <GameSmallCard
-      key={item.id}
-      id={item.id}
-      name={item.name}
-      rating={item.rating}
-      img={item.background_image}
-      dominant={item.dominant_color}
-      slug={item.slug}
-      />
-    ))
-  );
+  const displayList = () => {
+    if (!items.length) {
+      return <h5>Loading...</h5>;
+    } else
+      return items.map(item => (
+        <GameSmallCard
+          key={item.id}
+          id={item.id}
+          name={item.name}
+          rating={item.rating}
+          img={item.background_image}
+          slug={item.slug}
+        />
+      ));
+  };
 
   return (
-    <div>
+    <div className="content home">
+      <header>
         <h1>Shop</h1>
-        {
-          displayList()
-        }
+      </header>
+      <div className="body shop">{displayList()}</div>
     </div>
   );
 };

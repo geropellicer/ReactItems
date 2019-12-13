@@ -1,0 +1,12 @@
+.gameDetails{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: static;
+    padding: 18px;
+}
+.gameDetails li{
+    margin: 0;
+}

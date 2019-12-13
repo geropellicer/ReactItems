@@ -1,7 +1,6 @@
 import React,{useState} from 'react';
 import {Link} from 'react-router-dom';
-import '../style/nav.module.css';
-import { styles } from 'ansi-colors';
+import styles from '../style/Nav.module.css';
 
 const Nav = () => {
 
@@ -11,7 +10,6 @@ const Nav = () => {
     let menuStyle = {
         display
     }
-
     const toggleDisplay = () => {
         if(display === 'none'){
             setDisplay('flex');

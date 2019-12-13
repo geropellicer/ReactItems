@@ -150,3 +150,17 @@ pre {
 .juego-small img{
   width: 100%;
 }
+
+.gameHeader{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.gameHeader img{
+  width: 50%;
+}
+
+ul.gameDetails{
+  
+}

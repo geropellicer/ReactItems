@@ -74,6 +74,11 @@
 }
 .content {
   padding: 6px 48px;
+  min-height: calc(100vh - 175px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .content header {
@@ -83,4 +88,22 @@
   color: #fff;
   margin-bottom: 36px;
   margin-top: 24px;
+}
+
+.body{
+  margin: 0;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.body.about {
+  background: #000;
+  padding: 12px 24px;
+  text-align: left;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.body.about ol, .body.about li{
+  text-transform: none !important;
 }
